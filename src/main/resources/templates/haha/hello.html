@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title style="font-size: 20px;color: aqua">你好</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        label {
+            width: 200px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h6 style="color: brown;font-style: oblique">欢迎光临!</h6>
+        <!-- 1、页面上显示：<abc> -->
+        < abc ><br/>
+        <!-- 2、页面上显示：欢迎光临（要求中间10个空格） -->
+        欢迎&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;光临<br/>
+        <a href="https://www.baidu.com" target="_blank">百度/空白页打开</a><br/>
+        <a href="https://www.baidu.com" target="_self">百度/本页打开</a><br/>
+        <a href="https://www.baidu.com" target="_parent">百度/在父页面中打开</a><br/>
+        <a href="https://www.baidu.com" target="_top">百度/在顶部打开</a><br/><br/>
+        <a name="1"></a>
+        <!--设置锚点  <a name="顶部"></a>-->
+        <a name="top"></a>
+        <a href="#top">顶部</a>
+        <a href="#1">跳到第1章</a>
+        <a href="#2">跳到第2章</a>
+        <a href="#3">跳到第3章</a>
+        <a href="#4">跳到第4章</a>
+        <a href="#5">跳到第5章</a>
+        <h6>第1章</h6>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        <h6>第2章</h6>
+        <a name="2"></a>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        <h6>第3章</h6>
+        <a name="3"></a>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        <h6>第4章</h6>
+        <a name="4"></a>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        <h6>第5章</h6>
+        <a name="5"></a>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+        欢迎光临!欢迎光临!欢迎光临!欢迎光临!<br/>
+    </div>
+    <div>
+        <!--有序列表：-->
+        <h4>有序列表</h4>
+        <ol>
+            <li>张三</li>
+            <li>李四</li>
+            <li>王五</li>
+            <li>赵六</li>
+        </ol>
+    </div>
+    <div>
+        <!--无序列表：-->
+        <h4>无序列表</h4>
+        <ul>
+            <li>张三</li>
+            <li>李四</li>
+            <li>王五</li>
+            <li>赵六</li>
+        </ul>
+    </div>
+    <div>
+        <dl>
+            <dt>汽车品牌</dt>
+            <dd>宝马</dd>
+            <dd>奔驰</dd>
+            <dd>劳斯莱斯</dd>
+            <dt>手机品牌</dt>
+            <dd>小米</dd>
+            <dd>锤子</dd>
+            <dd>联想</dd>
+        </dl>
+    </div>
+    <div>
+        <img alt="图片没找到" src="/img/2.jpg" border="1px" width="250px" height="150">
+    </div>
+    <div>
+        <table border="1px solid red" width="400px" cellpadding="0px" cellspacing="0px">
+            <tr>
+                <td>姓名</td>
+                <td>电话</td>
+                <td>性别</td>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>17602112024</td>
+                <td rowspan="2">男</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>17081372026</td>
+                <!--<td></td>-->
+            </tr>
+        </table>
+    </div>
+    <div>
+        <form action="01.html" method="get">
+            <label>用户名</label><input type="text" name="username" th:value="${username}"/><br>
+            <label>密码</label><input type="password" name="pwd" th:value="${pwd}"/><br>
+            <label>确认密码</label><input type="password" name="pwd" th:value="${pwd}"/><br>
+            <label>性别</label><input type="radio" name="sex" value="男" checked/>男
+            <input type="radio" name="sex" value="女"/>女<br>
+            <label>爱好</label><input type="checkbox" name="hobby" value="音乐" checked>音乐
+                <input type="checkbox" name="hobby" value="体育" checked>体育
+                <input type="checkbox" name="hobby" value="美术">美术
+                <input type="checkbox" name="hobby" value="读书">读书 <br/>
+            <label>学历</label><select name="edu">
+                    <option value="">--请选择学历--</option>
+                    <option value="专科">专科</option>
+                    <option value="本科">本科</option>
+                    <option value="研究生" selected>研究生</option>
+                    <option value="硕士">硕士</option>
+                    <option value="博士">博士</option>
+                </select><br>
+            <label>个人描述</label><textarea id="desc" rows="6" cols="15" name="desc"></textarea><br>
+            <input id="aaa" hidden th:value="${desc}">
+            <input type="submit" value="提交" disabled/>
+            <input type="reset"/>
+        </form>
+    </div>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+    <script>
+        $("#desc").val($("#aaa").val());
+    </script>
+</body>
+
+</html>

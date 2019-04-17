@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title style="font-size: 20px;color: aqua">javaScript</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--外部引入js文件-->
+    <script src="/js/javaScript.js"></script>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>商品名</td>
+                <td>价格</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td>奔驰 S60</td>
+                <td>237万</td>
+                <td><a href="javascipt:void(0)" onclick="_delItem()">删除</a></td>
+            </tr>
+            <tr>
+                <td>宝马 X5</td>
+                <td>80万</td>
+                <td><a href="javascipt:void(0)" onclick="_delItem()">删除</a></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+    // 使用script标签嵌入js代码
+    //  alert(1111);
+    // 1. 定义一个变量名，使用typeof检测类型
+        var a; //undefined
+//            alert(typeof(a));
+    // 2. 给变量赋值数值型，使用typeof检测类型
+        var a = 0; //number
+//            alert(typeof(a));
+    // 3. 给变量赋值字符串型，使用typeof检测类型
+        var a = '111'; //string
+//            alert(typeof(a));
+    // 4. 关系（比较）运算
+        var num = 18;
+        var string = '18';
+//        alert(num == string); //true
+//        alert(num === string); //false  === 要求运算比较的两侧不仅比较两侧数值，还比较两侧的类型。
+//    5.JS中的消息框
+    function _delItem() {
+//        var flag = confirm("删除吗?")
+//        if(flag){
+//            alert("删除");
+//        }else {
+//            alert("取消");
+//        }
+        var d = prompt("请输入密码!");
+        alert("不正确!!");
+    }
+    </script>
+</body>
+</html>
