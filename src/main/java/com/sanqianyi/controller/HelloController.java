@@ -13,7 +13,7 @@ public class HelloController {
 
     @RequestMapping("/aaa/bbb/helloWorld")
     public JSONObject helloWorld() {
-        System.out.println("hahahahah1111");
+        System.out.println("hahahahah");
         JSONObject json = new JSONObject();
         json.put("desc", "成功");
         json.put("code", "1");
